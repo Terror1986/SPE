@@ -1,0 +1,18 @@
+Initializing BPE tokenizer...
+Training tokenizer... (20-40 min)
+Loading Wikipedia...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Wikipedia error: (Amz CF ID: OXgvm19o_lH4zApeHw-Xz6fjLRPHmCTpI9pPZ4GZr9fjM_f5NRkvWQ==)
+
+429 Too Many Requests for url: https://huggingface.co/api/datasets/wikimedia/wikipedia/tree/b04c8d1ceb2f5cd4588862100d08de323dccfbaa/20231101.ab?recursive=true&expand=false.
+Loading math/proof data...
+Math data skipped: Dataset scripts are no longer supported, but found proof-pile-2.py
+
+
+
+
+Saved to /home/terror86/spe/language/spe_tokenizer.json
+Vocab size: 6
+  28 tokens: 'The causal effect of X on Y.'
+  42 tokens: 'If player moves right, position increases.'
+  55 tokens: 'Large language models fail on interventional reaso'
