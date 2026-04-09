@@ -27,8 +27,12 @@ class PredictiveCodingLevel(nn.Module):
 
     def forward(self, x):
         B = x.shape[0]
+        # Match dtype to model weights
+        dtype = next(self.error_encoder.parameters()).dtype
+        x = x.to(dtype)
         if self.state is None or self.state.shape[0] != B:
             self.init_state(B)
+        self.state = self.state.to(dtype)
         new_info = self.error_encoder(x)
         gate = self.update_gate(torch.cat([self.state, new_info], dim=-1))
         self.state = gate * new_info + (1 - gate) * self.state

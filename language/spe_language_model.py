@@ -52,7 +52,7 @@ class SPELanguageModel(nn.Module):
         self.hwm = HierarchicalWorldModel()
 
         # Project HWM output (512 from L1) back to d_model for LM head
-        self.output_projection = nn.Linear(512, d_model)
+        self.output_projection = nn.Linear(2048, d_model)
 
         # Language model head
         self.lm_head = SPELanguageModelHead(d_model=d_model, vocab_size=vocab_size)
