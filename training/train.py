@@ -151,11 +151,12 @@ def train():
 
     # Model + optimizer
     model = build_model()
-    optimizer = torch.optim.AdamW(
+    import bitsandbytes as bnb
+    optimizer = bnb.optim.AdamW8bit(
         model.parameters(), lr=LR,
         betas=(0.9, 0.95), weight_decay=0.1,
-        eps=1e-8,
     )
+    log("Using 8-bit AdamW: ~6GB VRAM savings vs standard AdamW")
 
     # Resume if checkpoint exists
     start_step = load_checkpoint(model, optimizer)
