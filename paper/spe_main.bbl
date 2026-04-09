@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{jin2023cladder}
+Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele, Ojasv Kamal, Zhiheng Lyu,
+  Kevin Blin, Fernando~Gonzalez Adauto, Max Kleiman-Weiner, Mrinmaya Sachan,
+  and Bernhard Scholkopf.
+\newblock Cladder: Assessing causal reasoning in language models.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~36, 2023.
+
+\bibitem{zevcevic2023causal}
+Matej Zecevic, Moritz Willig, Devendra~Singh Dhami, and Kristian Kersting.
+\newblock Causal parrots: Large language models may talk causality but are not
+  causal.
+\newblock {\em arXiv preprint arXiv:2308.13067}, 2023.
+
+\bibitem{pearl2009causality}
+Judea Pearl.
+\newblock {\em Causality: Models, Reasoning and Inference}.
+\newblock Cambridge University Press, 2nd edition, 2009.
+
+\bibitem{kiciman2023causal}
+Emre Kiciman, Robert Ness, Amit Sharma, and Chenhao Tan.
+\newblock Causal reasoning and large language models: Opening a new frontier
+  for causality.
+\newblock {\em arXiv preprint arXiv:2305.00050}, 2023.
+
+\bibitem{gu2023mamba}
+Albert Gu and Tri Dao.
+\newblock Mamba: Linear-time sequence modeling with selective state spaces.
+\newblock {\em arXiv preprint arXiv:2312.00752}, 2023.
+
+\bibitem{friston2010free}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock {\em Nature Reviews Neuroscience}, 11(2):127--138, 2010.
+
+\bibitem{johnson2019faiss}
+Jeff Johnson, Matthijs Douze, and Herve Jegou.
+\newblock Billion-scale similarity search with gpus.
+\newblock {\em IEEE Transactions on Big Data}, 7(3):535--547, 2019.
+
+\end{thebibliography}
