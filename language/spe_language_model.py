@@ -92,8 +92,13 @@ class SPELanguageModel(nn.Module):
         x = self.input_projection(x)
 
         # Step 3: Process through Hierarchical World Model
-        # Returns world_states (4 levels) and free_energy scalar
-        world_states, free_energy = self.hwm(x)
+        # Use gradient checkpointing to save VRAM during training
+        if self.training:
+            from torch.utils.checkpoint import checkpoint
+            world_states, free_energy = checkpoint(
+                self.hwm, x, use_reentrant=False)
+        else:
+            world_states, free_energy = self.hwm(x)
 
         # Detach recurrent state to prevent graph accumulation
         for level in self.hwm.levels:
